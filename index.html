@@ -80,46 +80,66 @@
         <p class="text-center text-base lg:text-lg franie mb-6">Compartilhe seu conhecimento e torne-se uma referência no setor da saúde! Preencha o formulário abaixo, analisaremos suas informações e entraremos em contato em breve.</p>
     
         <form action="#" method="POST" class="space-y-6" id="colunistaForm">
-            
-            <!-- Campo de Input Personalizado -->
+            <!-- Nome -->
             <div class="relative">
                 <input type="text" id="nome" name="nome" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Nome Completo*" />
-                <label for="nome" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600"></label>
             </div>
-            
-            <!-- Outros campos seguindo o mesmo estilo -->
+        
+            <!-- E-mail -->
             <div class="relative">
                 <input type="email" id="email" name="email" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" E-mail Profissional*" />
-                <label for="email" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600"></label>
             </div>
-    
+        
+            <!-- Telefone -->
             <div class="relative">
                 <input type="text" id="telefone" name="telefone" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Telefone/WhatsApp" />
-                <label for="telefone" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600"></label>
             </div>
-    
+        
+            <!-- Especialidade -->
             <div class="relative">
                 <input type="text" id="especialidade" name="especialidade" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Especialidade / Área de Atuação*" />
-                <label for="especialidade" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600"></label>
             </div>
-    
-            <!-- Textarea personalizado -->
+        
+            <!-- Experiência Profissional -->
             <div class="relative">
                 <textarea id="experiencia" name="experiencia" rows="4" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Experiência Profissional"></textarea>
-                <label for="experiencia" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600"></label>
             </div>
             
+            <!-- Redes Sociais / Website Profissional -->
+            <div class="relative">
+                <input type="text" id="redes" name="redes" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Redes Sociais / Website Profissional" />
+            </div>
+            
+            <!-- Tema de Interesse para Publicação -->
+            <div class="relative">
+                <select id="tema" name="tema" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <option value="" disabled selected>Tema de Interesse para Publicação</option>
+                    <option value="gestao">Gestão na saúde</option>
+                    <option value="inovacao">Inovação</option>
+                    <option value="marketing">Marketing médico</option>
+                    <option value="compliance">Compliance</option>
+                    <option value="financas">Finanças</option>
+                    <option value="outro">Outro (especifique abaixo)</option>
+                </select>
+            </div>
+            
+            <!-- Campo de texto para outro tema -->
+            <div class="relative">
+                <input type="text" id="tema_outro" name="tema_outro" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Caso tenha outro tema de interesse, escreva aqui" />
+            </div>
+        
             <!-- Checkbox de Aceite -->
             <div class="flex items-center space-x-2">
                 <input type="checkbox" id="aceite" name="aceite" required class="w-5 h-5 text-green-600">
                 <label for="aceite" class="text-sm">Li e concordo com os <a href="#" class="text-green-600 underline">termos de participação como colunista</a>.</label>
             </div>
-    
-            <!-- Botão estilizado -->
+        
+            <!-- Botão de envio -->
             <div class="text-center pt-4">
-                <button  type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold uppercase rounded-xl px-8 py-3 transition duration-300">Quero ser um colunista</button>
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold uppercase rounded-xl px-8 py-3 transition duration-300">Quero ser um colunista</button>
             </div>
         </form>
+        
     </div>
     
 </section>
